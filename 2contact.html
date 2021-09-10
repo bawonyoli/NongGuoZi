@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init("user_aMjH5KHo9lvpKrwcByHs4");
+        })();
+    </script>
+    <script src="contact.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+<form>
+    <select id="qa">
+        <option selected value>請選擇意見和反應類型</option>
+        <option value="訂單問題">訂單問題</option>
+        <option value="系統操作問題">系統操作問題</option>
+        <option value="意見與回饋">意見與回饋</option>
+        <option value="舉報不實貼文">舉報不實貼文</option>
+        <option value="其他">其他</option>
+    </select>
+    <label for="name">Name</label>
+    <input type="text" id="name">
+    <label for="email">Email</label>
+    <input type="email" id="email">
+    <label for="message">Message</label>
+    <textarea id="message"></textarea>
+    <input type="submit" value="送出" id="btn" onclick="send()">
+</form>
+
+<script>
+
+</script>
+
+
+</body>
+</html>

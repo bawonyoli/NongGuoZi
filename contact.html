@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="">
+            <select name="" id="">
+                <option value=""  selected>請選擇意見反映類型：</option>
+                <option value="">訂單問題</option>
+                <option value="">系統操作問題</option>
+                <option value="">意見與回饋</option>
+                <option value="">舉報不實貼文</option>
+                <option value="">其他</option>
+            </select>
+        </label>
+        <label>姓名<input type="text"></label>
+        <label>信箱<input type="text"></label>
+        
+        <label>內容<textarea name="" id="" cols="30" rows="10"></textarea></label>
+        <label><input type="file"></label>
+        
+        
+    </form>
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init("<YOUR USER ID>");
+    })();
+    </script>
+</body>
+</html>
